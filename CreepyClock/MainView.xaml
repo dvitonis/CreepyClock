@@ -5,6 +5,15 @@
         xmlns:views="clr-namespace:Views;assembly=CreepyClock"         
         MinHeight="220" MinWidth="300" Height="Auto"
         x:Name="Self" >
-    <Grid >
+    <Grid Background="Black">
+        <Viewbox >
+            <Label
+                Name="ClockLabel"
+                Content="20:37:40"
+                Foreground="White"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontFamily="Consolas" />
+        </Viewbox>
     </Grid>
 </UserControl>
