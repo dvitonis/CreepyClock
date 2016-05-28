@@ -1,4 +1,8 @@
 source https://www.nuget.org/api/v2
+nuget Accord.Imaging
+nuget Accord.Video
+nuget Accord.Video.DirectShow
+nuget Accord.Vision
 nuget FSharp.Core redirects: force
 nuget FSharp.ViewModule.Core
 nuget FsXaml.Wpf

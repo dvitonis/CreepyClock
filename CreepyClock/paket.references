@@ -1,3 +1,7 @@
 Expression.Blend.Sdk
 FSharp.ViewModule.Core
 FsXaml.Wpf.Blend
+Accord.Video
+Accord.Video.DirectShow
+Accord.Vision
+Accord.Imaging

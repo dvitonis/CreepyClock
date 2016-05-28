@@ -1,6 +1,33 @@
 NUGET
   remote: https://www.nuget.org/api/v2
   specs:
+    Accord (3.0.2)
+    Accord.Imaging (3.0.2)
+      Accord (>= 3.0.2)
+      Accord.MachineLearning (>= 3.0.2)
+      Accord.Math (>= 3.0.2)
+      Accord.Statistics (>= 3.0.2)
+    Accord.MachineLearning (3.0.2)
+      Accord (>= 3.0.2)
+      Accord.Math (>= 3.0.2)
+      Accord.Statistics (>= 3.0.2)
+    Accord.Math (3.0.2)
+      Accord (>= 3.0.2)
+    Accord.Statistics (3.0.2)
+      Accord (>= 3.0.2)
+      Accord.Math (>= 3.0.2)
+    Accord.Video (3.0.2)
+      Accord (>= 3.0.2)
+    Accord.Video.DirectShow (3.0.2)
+      Accord (>= 3.0.2)
+      Accord.Video (>= 3.0.2)
+    Accord.Vision (3.0.2)
+      Accord (>= 3.0.2)
+      Accord.Imaging (>= 3.0.2)
+      Accord.MachineLearning (>= 3.0.2)
+      Accord.Math (>= 3.0.2)
+      Accord.Statistics (>= 3.0.2)
+      Accord.Video (>= 3.0.2)
     Expression.Blend.Sdk (1.0.2) - framework: >= net45
     FSharp.Core (4.0.0.1) - redirects: force
     FSharp.ViewModule.Core (0.9.9.3)
