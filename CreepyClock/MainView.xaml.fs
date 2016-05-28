@@ -13,8 +13,8 @@ type MainView() =
     let lookingDecider = CompositionRoot.lookingDecider
     
     override this.OnInitialize() =
-        this.Loaded.Add   this.OnLoaded
-        this.Unloaded.Add this.OnUnloaded
+        this.Loaded.Add this.OnLoaded
+        this.Dispatcher.ShutdownStarted.Add this.OnUnloaded
         
     member this.OnLoaded _ =
         let showTime decision =
