@@ -9,7 +9,7 @@
         <Viewbox >
             <Label
                 Name="ClockLabel"
-                Content="20:37:40"
+                Content="Creepy Clock"
                 Foreground="White"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
