@@ -55,6 +55,8 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="RateLimitAgent.fs" />
+    <Compile Include="Observable.fs" />
     <Resource Include="MainView.xaml" />
     <Compile Include="MainView.xaml.fs" />
     <Resource Include="MainWindow.xaml" />
