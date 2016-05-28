@@ -55,7 +55,6 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainViewModel.fs" />
     <Resource Include="MainView.xaml" />
     <Compile Include="MainView.xaml.fs" />
     <Resource Include="MainWindow.xaml" />
