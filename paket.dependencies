@@ -1,0 +1,5 @@
+source https://www.nuget.org/api/v2
+nuget FSharp.Core redirects: force
+nuget FSharp.ViewModule.Core
+nuget FsXaml.Wpf
+nuget FsXaml.Wpf.Blend

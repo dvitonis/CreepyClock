@@ -1,0 +1,10 @@
+NUGET
+  remote: https://www.nuget.org/api/v2
+  specs:
+    Expression.Blend.Sdk (1.0.2) - framework: >= net45
+    FSharp.Core (4.0.0.1) - redirects: force
+    FSharp.ViewModule.Core (0.9.9.3)
+    FsXaml.Wpf (2.1)
+    FsXaml.Wpf.Blend (2.1)
+      Expression.Blend.Sdk (>= 1.0.2) - framework: >= net45
+      FsXaml.Wpf (>= 2.1) - framework: >= net45
