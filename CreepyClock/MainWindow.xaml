@@ -2,7 +2,10 @@
 		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 		xmlns:local="clr-namespace:Views;assembly=CreepyClock"
-		Title="Creepy Clock" MinHeight="120" Width="300" Height="Auto" SizeToContent="WidthAndHeight">
+		Title="Creepy Clock" MinHeight="120" Width="300" Height="Auto"
+        ResizeMode="NoResize" 
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized">
 	<Grid>
 		<local:MainView Grid.Row="1" IsTabStop="False" />
 	</Grid>
