@@ -11,17 +11,14 @@ type MainView() =
     inherit MainViewBase()
 
     let lookingDecider = CompositionRoot.lookingDecider
-    
-    override this.OnInitialize() =
-        this.Loaded.Add this.OnLoaded
-        this.Dispatcher.ShutdownStarted.Add this.OnUnloaded
-        
+
     member this.OnLoaded _ =
         let showTime decision =
-            this.Dispatcher.Invoke( fun () ->
+            let show () =
                 match decision with
                 | Looking    -> this.ClockLabel.Content <- DateTime.Now.ToString("HH:mm:ss")
-                | NotLooking -> this.ClockLabel.Content <- "" )
+                | NotLooking -> this.ClockLabel.Content <- ""
+            this.Dispatcher.Invoke(fun () -> show())
 
         lookingDecider.DecisionOccurred
         |> Observable.subscribe showTime
@@ -31,3 +28,7 @@ type MainView() =
 
     member this.OnUnloaded _ =
         lookingDecider.Stop ()
+    
+    override this.OnInitialize() =
+        this.Loaded.Add this.OnLoaded
+        this.Dispatcher.ShutdownStarted.Add this.OnUnloaded
